@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>landlord</title>
+    <link rel="icon" href="../picture/title.ico" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" href="../css/rent/landlord.css">
+    <link rel="stylesheet" href="../css/rent/userPicture.css" type="text/css">
+</head>
+<body id="body">
+<div class="header">
+    <img class="picture"></img>
+    <span class="choose1" onclick="choose1()">查看住房信息</span>
+    <span class="choose2" onclick="choose2()">房屋出租</span>
+    <span class="choose3" onclick="choose3()">名下出租房</span>
+    <span class="choose4" onclick="choose4()">待办事项</span>
+    <a class="forum">信息交流发布</a>
+    <button class="userName" style="font-size: 25px;">cabbage</button>
+    <button class="pageUp">返 回</button>
+    <form action="../exit" method="post" id="form">
+        <input type="submit" value="退出" class="exit">
+    </form>
+</div>
+<div class="body1">
+</div>
+<form action="../landlordFileUpload" method="post" enctype="multipart/form-data">
+    <div class="body2 slide_in">
+        <div class="left_gate">
+            <p class="op">OP</p>
+        </div>
+        <div class="right_gate">
+            <p class="en">EN</p>
+        </div>
+        <div class="description">
+            出租房描述<br><textarea rows="6" cols="60" name="description" class="inputDescription"></textarea>
+        </div>
+        <div class="title">
+            房型：<input type="text" name="roomType" class="roomType">
+            房屋租金：<input type="text" name="rent" class="rent">
+        </div>
+        <div class="tel">
+            地址：<input type="text" name="addr" class="addr">
+            房客上限：<input type="text" name="maxRenter" class="maxRenter">
+        </div>
+        <div class="addPicture">
+            选择上传图片<br>
+            <div class="pictureContainer"></div>
+            <div class="file">选择图片<input type="file" id="imageUpload" name="imageUpload"
+                                         onchange="readAsDataURL()" />
+            </div>
+        </div>
+        <button type="submit" class="uploadButton02" onclick="return upload()">提交</button>
+    </div>
+</form>
+<div class="body3">
+</div>
+<div class="body4">
+    <div class="holder">
+        <div class="dot"></div>
+        <div class="bullet"></div>
+        <div class="line_one"></div>
+        <div class="line_two"></div>
+        <div class="pholder_one"></div>
+    </div>
+    <div class="wrap ">
+        <p class="noRequest">还没有用户发起租房申请！</p>
+        <!--<div class="content01">
+        <button class="rentConfirm">同意</button>
+        <button class="rentReject">拒绝</button>
+    </div>
+    <div class="content01">
+        <button class="rentConfirm">同意</button>
+        <button class="rentReject">拒绝</button>
+    </div>-->
+    </div>
+</div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/rent/points.js"></script>
+<script src="../js/rent/landlord.js"></script>
+<script src="../js/rent/userPicture.js"></script>
+<script src="../js/rent/returnToRole.js"></script>
+</body>
+</html>

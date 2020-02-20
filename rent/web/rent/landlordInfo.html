@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>landlordInfo</title>
+    <link rel="icon" href="../picture/title.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/rent/userInfoRecord.css" type="text/css">
+</head>
+<body>
+<form action="../landlordInfo" method="post">
+    <div class="box">
+        <div class="box_ribbon"></div>
+        <p class="title"><strong>您还没有登记信息，填写以下内容后可以继续访问!</strong></p>
+        <div class="body">
+            <div class="box2">
+                <input id="userName" name="userName" type="text" placeholder="姓名" class="input"><br>
+            </div>
+            <div class="box2">
+                <input id="userAddr" name="userAddr" type="text" placeholder="住址" class="input"><br>
+            </div>
+            <div class="box2">
+                <input id="userTel" name="userTel" type="text" placeholder="联系电话" class="input"><br>
+            </div>
+            <button type="submit" onclick="return check()">提交信息</button>
+        </div>
+    </div>
+</form>
+<button class="returnTo" onclick="returnToLastPage()">返回</button>
+<script src="../js/rent/userInfoRecord.js"></script>
+</body>
+</html>

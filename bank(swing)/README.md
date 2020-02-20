@@ -1,5 +1,5 @@
 # bank
-swing+sqlserver实现界面的简单银行管理系统
+swing+mysql简单银行管理系统
 
 1.账号注册登陆
 

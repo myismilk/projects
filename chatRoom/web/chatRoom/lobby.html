@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室大厅</title>
+    <link rel="icon" href="../picture/title.ico" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" href="../css/chatRoom/lobby.css">
+    <link rel="stylesheet" href="../css/chatRoom/infoChange.css" type="text/css">
+</head>
+<body id="body">
+<div class="backgroundDiv">
+    <form action="../createRoom" method="post">
+    <div class="addRoom">
+        聊天室名称：<input name="roomName" class="roomName"><br>
+        聊天室简介<br>
+        <textarea class="roomDes" name="roomDes"></textarea><br>
+        设置聊天室邀请码：<input type="password" name="roomPassword" class="roomPassword"><br>
+        <button type="submit" class="createConfirm" onclick="return createConfirm()">创 建</button>
+    </div>
+    </form>
+</div>
+<div class="backgroundDiv02">
+        <div id="enterRoom">
+            请输入聊天室邀请码：<input type="password" name="roomPassword" class="roomPassword02"><br>
+            <button type="button" class="enterConfirm" onclick="enterChatRoom()">进入聊天室</button>
+            <button type="button" class="cancelEnter" onclick="cancelEnter()">返回</button>
+        </div>
+</div>
+<div class="header">
+    <div class="picture"></div>
+    <a class="welcome">cabbage聊天室！</a>
+    <p class="userName">cabbage</p>
+    <form action="../exitToLogin" method="post">
+        <input type="submit" value="退出" class="exit" onclick="return exitConfirm()">
+    </form>
+</div>
+<div class="body1">
+</div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/chatRoom/bubbles02.js"></script>
+<script src="../js/chatRoom/lobby.js"></script>
+<script src="../js/chatRoom/infoChange.js"></script>
+</body>
+</html>

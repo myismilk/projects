@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>renterInfo</title>
+    <link rel="icon" href="../picture/title.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/rent/userInfoRecord.css" type="text/css">
+</head>
+<body onload="list()">
+<div class="box">
+    <div class="box_ribbon"></div>
+    <p class="title"><strong>您还没有登记信息，填写以下内容后可以继续访问!</strong></p>
+    <div class="body">
+        <div class="box2">
+            <input id="userName" name="input1" type="text" placeholder="姓名" class="input"><br>
+        </div>
+        <div class="box2">
+            <input id="userAddr" name="input2" type="text" placeholder="住址" class="input"><br>
+        </div>
+        <div class="box2">
+            <input id="userTel" name="input3" type="text" placeholder="联系电话" class="input"><br>
+        </div>
+        <div class="birthChoose">
+            出生日期：
+            <select id="year" name="year" onchange="febday();">
+            </select>年
+            <select name="month" id="month" onchange="febday();">
+            </select>月
+            <select name="day" id="day">
+            </select>日
+        </div>
+        <div class="sexChoose">
+            性别：<input id="man" value="男" type="radio" checked="checked" name="man" onclick="sexChangeToM()"/>男
+            <input id="woman" value="女" type="radio" name="woman" onclick="sexChangeToW()"/>女
+            <checkbox></checkbox>
+        </div>
+        <button type="button" onclick="upload()">提交信息</button>
+    </div>
+</div>
+<button class="returnTo" onclick="returnToLastPage()">返回</button>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/rent/userInfoRecord.js"></script>
+</body>
+</html>

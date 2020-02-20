@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>信息登记</title>
+    <link rel="icon" href="../picture/title.ico" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" href="../css/chatRoom/userInfo.css">
+</head>
+<body id="body">
+<form action="../exitToLogin" method="post">
+    <input type="submit" value="退出" class="exit" onclick="return exitConfirm()">
+</form>
+<form action="../uploadFile" method="post" enctype="multipart/form-data">
+    <div class="body2">
+        <p class="tips">系统检测到您为首次登陆，填写以下信息后方可进入聊天室！</p>
+        昵称 <input name="nickName" class="nickName" placeholder="必填"><br>
+        个性签名 <br><textarea name="signature" class="signature"></textarea>
+        <input type="file" id="imageUpload" name="imageUpload" onchange="readAsDataURL()"/>
+        <div id="picContainer">
+            设置头像<br>
+            <div class="pictureContainer"></div>
+            <div class="file">选择图片
+            </div>
+        </div>
+        <button type="submit" class="uploadButton02" onclick="return upload()">提交</button>
+    </div>
+</form>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/chatRoom/userInfo.js"></script>
+</body>
+</html>

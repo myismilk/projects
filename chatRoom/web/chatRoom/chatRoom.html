@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chatRoom</title>
+    <link rel="icon" href="../picture/title.ico" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" href="../css/chatRoom/chatRoom.css">
+    <link rel="stylesheet" href="../css/chatRoom/infoChange.css" type="text/css">
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+<div class="body4">
+    <form action="../returnToLobby" method="post">
+        <button type="submit" class="returnToLobby" onclick="return offLine()">返回大厅</button>
+    </form>
+    <div class="holder">
+        <div class="dot"></div>
+        <div class="bullet"></div>
+        <div class="line_one"></div>
+        <div class="line_two"></div>
+        <div class="pholder_one"></div>
+    </div>
+    <div class="wrap" id="wrap">
+        <div class="showRegion">
+            <p class="noRequest">还没有人说过话！</p>
+            <!--<div>test01:<div class="content01"><a href="exit/exit.txt" download="文件名.txt">点击下载</a></div></div>
+                <div>test02:<div class="content01">
+                    sdfsdfffffffffffffffffffffffffffffffsdf
+                </div></div>
+                <div>test03:<div class="content01">
+                    dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                </div></div>
+                    <div>test03:<div class="content01">
+                        dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                    </div></div><div>test03:<div class="content01">
+                    dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                </div></div><div>test03:<div class="content01">
+                    dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                </div></div><div>test03:<div class="content01">
+                    dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                </div></div><div>test03:<div class="content01">
+                    dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                </div></div><div>test03:<div class="content01">
+                    dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                </div></div><div>test03:<div class="content01">
+                    dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                </div></div><div>test03:<div class="content01">
+                    dgdfdfgsdfsdfsdfd;l'fgkd;'fl'gkdl;fgklrsgfdffffffffffffffffffffffffffffff
+                </div></div>-->
+        </div>
+
+        <div class="inputRegion">
+            <textarea class="inputArea" name="inputArea"></textarea>
+            <button class="send">发送</button>
+            <input type="file" id="uploadFile" class="fileUpload">
+            <input type="button" class="chooseFile" value="上传文件">
+        </div>
+    </div>
+    <div class="list">
+        <p class="header">聊天室成员</p>
+        <!--<p class="online">xixi</p>
+        <p class="online">haha</p>
+        <p class="offline">haha</p>-->
+    </div>
+</div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script>
+    window.onbeforeunload = function(){
+        fetch("../returnToLobby",{
+            method:"POST"
+        })
+    }
+</script>
+<script src="../js/chatRoom/digitalRain.js"></script>
+<script src="../js/chatRoom/chatRoom.js"></script>
+<script src="../js/chatRoom/showUserInfo.js"></script>
+</body>
+</html>

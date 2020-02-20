@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择租房or出租房屋</title>
+    <link rel="icon" href="../picture/title.ico" type="image/x-icon"/>
+    <link href="../css/rent/role.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<form action="../exit" method="post">
+    <div class="welcomeTitle"></div>
+    <a href="#" class="renter">
+        <div id="role1">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="circle c3"></div>
+            <p class="choose1">租客</p>
+        </div>
+    </a>
+    <a href="#" class="landlord">
+        <div id="role2">
+            <div class="circle c4"></div>
+            <div class="circle c5"></div>
+            <div class="circle c6"></div>
+            <p class="choose2">房东</p>
+        </div>
+    </a>
+    <div id="center01"></div>
+    <div id="center02"></div>
+    <p id="rEnter01">租客入口</p>
+    <p id="lEnter02">房东入口</p>
+    <button type="submit" class="exit" onclick="return show_confirm()">退出</button>
+</form>
+    <script src="../js/rent/role.js"></script>
+</body>
+</html>
