@@ -1,0 +1,516 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: #f1f1f1;
+    cursor: url("../cursor.ico"), auto;
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+input:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 255, 0.77);
+}
+button:focus{
+    outline: none;
+}
+
+.header {
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    height: 60px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 5px solid rgb(49, 48, 48);
+    white-space: nowrap;
+}
+
+.picture {
+    position: relative;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("token.jpg") no-repeat;
+    background-size: cover;
+}
+
+.header>span,
+.header>a,
+.header>button {
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    padding: 8px;
+    margin: 0 0 0 20px;
+    text-align: center;
+    border-radius: 20px;
+    transform: translateY(-16px);
+}
+.header>button{
+    color:black;
+}
+
+.header>span:hover,
+.header>span:active {
+    background-color: darkblue;
+    color:white;
+}
+
+.header>a:hover,
+.header>a:active {
+    background-color: darkblue;
+    color:white;
+}
+
+.choose1 {
+    background-color: darkblue;
+    color:white;
+}
+
+.choose2 {
+    background-color: lightblue;
+}
+
+.choose3 {
+    background-color: lightblue;
+}
+
+.choose4 {
+    background-color: lightblue;
+}
+
+.forum {
+    background-color: lightblue;
+}
+
+.userName {
+    background: transparent !important;
+    border:none;
+    text-decoration: underline;
+}
+
+.userName:hover{
+    color:red;
+}
+
+.pageUp {
+    background: #e8c775;
+    text-align: center;
+    border:none;
+}
+
+.pageUp:hover,
+.pageUp:active {
+    background-color: rgb(252, 92, 0);
+    color:white;
+}
+
+#form{
+    display: inline-block;
+    margin:0 0 0 20px;
+}
+
+.exit {
+    position: relative;
+    width:56px;
+    height:38px;
+    background: rgba(255, 74, 95, 0.86);
+    text-align: center;
+    font-size: 18px;
+    transform: translateY(-16px);
+}
+
+.exit:hover,
+.exit:active {
+    background-color: rgb(255, 40, 37);
+    color: #fff8af;
+}
+
+.body1 {
+    display: block;
+    margin-top: 70px;
+    position: absolute;
+    overflow-y: scroll;
+    width: 100%;
+    height: 92%;
+}
+
+/*用于js弹框中的按钮样式设计*/
+.a:hover,
+.a:active {
+    background-color: #FF6F3C;
+}
+
+.op {
+    position: absolute;
+    left: 82.5%;
+    top: 40%;
+    height: 160px;
+    width: 80px;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(100, 95, 26);
+    border-radius: 160px 0 0 160px;
+    border: 1px solid #897c7f;
+    border-right: 0;
+    text-align: center;
+    line-height: 160px;
+    background: #a9fffd;
+}
+
+.en {
+    position: absolute;
+    left: -0.5%;
+    top: 40%;
+    height: 160px;
+    width: 80px;
+    border-radius: 0 160px 160px 0;
+    border: 1px solid #897c7f;
+    border-left: 0;
+    font-size: 45px;
+    color: rgb(100, 95, 26);
+    font-weight: bold;
+    text-align: center;
+    line-height: 160px;
+    background: #ff9266;
+}
+
+.body2 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 900px;
+    height: 880px;
+    background: url("landlord02.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 幼圆;
+    color: rgb(102, 255, 247);
+    border-radius: 50px;
+    border: 1px solid #d1cecb;
+    z-index: 1;
+    padding: 10px;
+    margin: 0 0 0 -450px;
+    overflow-y: scroll;
+
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    -mox-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.left_gate {
+    position: absolute;
+    background: #DBDCDE;
+    bottom: 0;
+    right: 50%;
+    left: 0;
+    top: 0;
+    border: 1px solid #F0F0F0;
+
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -ms-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+
+}
+
+.body2:hover .left_gate {
+    right: 100%;
+    left: -50%;
+    background: white;
+}
+
+.right_gate {
+    position: absolute;
+    background: #DBDCDE;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    top: 0;
+    border: 1px solid #F0F0F0;
+
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -ms-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
+    transition: all 1.5s ease-out;
+}
+
+.slide_in {
+    overflow: hidden;
+}
+
+.slide_in .left_gate {
+    background: #dbbade;
+    border: 1px solid #F0F0F0;
+}
+
+.slide_in .right_gate {
+    background: #c1de8c;
+    border: 1px solid #F0F0F0;
+}
+
+.body2:hover .right_gate {
+    left: 100%;
+    right: -50%;
+    background: yellow;
+}
+
+.body2:hover .en {
+    background: #fbfdff;
+}
+
+.body2:hover .op {
+    background: yellow;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    border-radius: 8px;
+    border: 2px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.title {
+    margin: 15px;
+}
+
+.tel {
+    margin: 15px;
+}
+
+.inputDescription {
+    border-radius: 10px;
+    font-size: 18px;
+    width: 500px;
+    height: 100px;
+}
+
+.pictureContainer {
+    height: 400px;
+    width: 440px;
+    margin: 0 0 0 26%;
+    background: #eeebe8;
+}
+
+.file {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 15px;
+    color: #1E88C7;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 15px;
+}
+
+.file input {
+    color: transparent;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+}
+
+.uploadButton02 {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    border-radius: 50%;
+    border: 0;
+    font-size: 22px;
+    color: #5e5e5e;
+}
+
+.uploadButton02:focus {
+    outline: none;
+    border: 1px solid lightblue;
+}
+
+.uploadButton02:hover,
+.uploadButton02:active {
+    background-color: #d8b890;
+}
+
+.body3 {
+    display: none;
+}
+
+.body3 input {
+    width: 120px;
+}
+
+.body4 {
+    display: none;
+    position: absolute;
+    top: 10%;
+    width: 98%;
+    height: 88%;
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 幼圆;
+    color: rgb(102, 255, 247);
+    border-radius: 10px;
+    border: 0;
+    z-index: 1;
+    padding: 10px;
+    margin: 0 0 0 0;
+    word-break: break-all;
+}
+
+.wrap {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    height: 80%;
+    overflow: auto;
+    background-color: #e3f0b5;
+    /*box-shadow*/
+    box-shadow: 0 2px 10px hsla(0, 0%, 0%, .4), inset 0 1px 0 #ccc, inset 1px 0 0 #aaa, inset 0 -1px 0 #ccc, inset -1px 0 0 #aaa, inset 0 2px 0 #c6c6c6, inset 2px 0 0 #a6a6a6, inset 0 -2px 0 #c6c6c6, inset -2px 0 0 #a6a6a6, inset 0 0 50px hsla(0, 0%, 0%, .5);
+    border: 3px solid #b8eeeb;
+    /*border-radius*/
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+}
+
+/*dot*/
+.dot {
+    position: absolute;
+    top: -113px;
+    left: 48%;
+    border-radius: 50%;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    background-color: #646464;
+}
+
+/* rope */
+.holder {
+    width: 30%;
+    position: relative;
+    margin: 20px auto;
+    margin-top: 8%;
+}
+
+.line_one {
+    width: 63%;
+    height: 15px;
+    /*linear-gradient*/
+    background: linear-gradient(top, rgb(247, 95, 30) 0%, rgb(255, 152, 99) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(247, 95, 30)), color-stop(100%, rgb(255, 152, 99)));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#c6c6c6', GradientType=0);
+    position: absolute;
+    /*transform*/
+    transform: rotate(-20deg);
+    top: -50px;
+    left: -10%;
+    /*box-shadow*/
+    -webkit-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.line_two {
+    width: 63%;
+    height: 15px;
+    /*linear-gradient*/
+    background: linear-gradient(top, rgb(247, 95, 30) 0%, rgb(255, 152, 99) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(247, 95, 30)), color-stop(100%, rgb(255, 152, 99)));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#c6c6c6', GradientType=0);
+    position: absolute;
+    /*transform*/
+    transform: rotate(20deg);
+    top: -50px;
+    right: -10%;
+    /*box-shadow*/
+    -webkit-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.noRequest {
+    display: none;
+    position: relative;
+    top: 30%;
+    color: #ff6a60;
+    font-weight: bold;
+}
+
+.content01 {
+    display: block;
+    position: relative;
+    text-align: left;
+    text-indent: 2em;
+    color: #3a21ff;
+    font-weight: bold;
+    /*display:inline-block !important;
+display:inline;*/
+    margin: 10px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #b3ffbd;
+}
+
+.rentConfirm {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    bottom: 0;
+    right: 100px;
+    margin: 10px;
+    background: #84e3e6;
+}
+
+.rentConfirm:hover,
+.rentConfirm:active {
+    background: #6975ff;
+    color: white;
+}
+
+.rentReject {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 18px;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    margin-right: 20px;
+    background: #ff687c;
+}
+
+.rentReject:hover,
+.rentReject:active {
+    background: red;
+    color: white;
+}

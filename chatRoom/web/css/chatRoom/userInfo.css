@@ -1,0 +1,167 @@
+body {
+    cursor: url("cursor.ico"), auto;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 255, 0.77);
+}
+
+button:focus {
+    outline: none;
+    border: 1px solid #f8e923;
+}
+
+.picture {
+    position: absolute;
+    margin: 0;
+    top: 9px;
+    left: 20px;
+    width: 90px;
+    height: 85px;
+    border-radius: 15px;
+    background: url("token.jpg") no-repeat;
+    background-size: contain;
+}
+
+.exit {
+    position: absolute;
+    left: 75%;
+    background: rgba(255, 132, 127, 0.86);
+    width: 60px;
+    height: 46px;
+    padding: 0;
+    margin: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 23px;
+    line-height: 46px;
+}
+
+.exit:hover, .exit:active {
+    background-color: rgb(255, 40, 37);
+    color: #fffcf6;
+}
+
+/*用于js弹框中的按钮样式设计*/
+.a:hover, .a:active {
+    background-color: #FF6F3C;
+}
+
+.body2 {
+    position: absolute;
+    overflow: hidden;
+    top: 80px;
+    left: 50%;
+    width: 600px;
+    height: 800px;
+    background: url("login.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 幼圆;
+    color: rgb(102, 255, 247);
+    border-radius: 30px;
+    border: 1px solid #d1cecb;
+    z-index: 1;
+    padding: 10px;
+    margin: 0 0 0 -300px;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    -mox-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    border-radius: 8px;
+    border: 2px;
+    margin: 20px;
+    font-size: 18px;
+}
+.tips
+{
+    color:red;
+    text-align: left;
+    font-weight: bold;
+    font-size: 25px;
+}
+.nickName
+{
+    margin-top:20px;
+}
+.signature
+{
+    font-size: 18px;
+    height:100px;
+    width:400px;
+    border-radius: 15px;
+}
+
+.picContainer{
+    position: relative;
+    width: 100%;
+}
+
+.pictureContainer {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    left:50%;
+    margin-left: -125px;
+    background: #eeebe8;
+}
+
+.file {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    left:50%;
+    margin-left: -30px;
+    margin-top: 10px;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 15px;
+    color: #1E88C7;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#imageUpload{
+    position:relative;
+    top:100px;
+    left:-30%;
+    color: transparent;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.file:hover {
+    background: #256efd;
+    border-color: #78C3F3;
+    color: white;
+}
+
+.uploadButton02 {
+    width: 80px;
+    height: 80px;
+    margin: 4% 0 0 0;
+    border-radius: 50%;
+    border: 0;
+    font-size: 22px;
+    color: #5e5e5e;
+}
+
+.uploadButton02:focus {
+    outline: none;
+    border: 1px solid lightblue;
+}
+
+.uploadButton02:hover, .uploadButton02:active {
+    background-color: #ffc767;
+    color:white;
+}
+
+
+

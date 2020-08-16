@@ -1,0 +1,152 @@
+body {
+    background-image: url(login.jpg);
+    cursor: url("cursor.ico"), auto;
+}
+
+.box {
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -325px;
+    top: 150px;
+    border: 1px;
+    background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#fff), to(#f3f3f3), color-stop(.1, #fff));
+    width: 650px;
+    height: 650px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #656565;
+}
+
+.header {
+    padding: 0;
+    margin:0;
+    font-size: 36px;
+    text-align: center;
+    color: grey;
+    height: 83px;
+    border-style: none none groove none;
+}
+
+
+.title{
+    margin:0;
+    font-size: 60px;
+    letter-spacing:2px;
+    font-family: Ebrima, Arial, Helvetica, Sans-Serif;
+    font-weight: normal;
+}
+strong.c {
+    color: rgb(66, 133, 244);
+}
+
+strong.a {
+    color: rgb(234, 67, 53);
+}
+strong.a2{
+    color: #43fcff;
+}
+strong.b {
+    color: rgb(251, 188, 5);
+}
+strong.b2{
+    color: #ff4a86;
+}
+strong.g {
+    color: rgb(52, 168, 83);
+}
+strong.e {
+    color: rgb(162, 100, 234);
+    display: inline-block;
+}
+
+.error {
+    height: 40px;
+    width: 350px;
+    background-color: red;
+    margin: 10px 0 0 -175px;
+    position: relative;
+    left: 50%;
+    border: 0;
+    border-radius: 8px;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.body {
+    border: none;
+    background-color: ghostwhite;
+    width: 600px;
+    height: 420px;
+    position: relative;
+    top: 50px;
+    left: 25px;
+}
+
+.user {
+    position: relative;
+    font-size: 30px;
+    padding-left: 125px;
+    padding-top: 25px;
+    margin: 0px;
+    color: #9d9d9d;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #99c4ff;
+}
+
+.input {
+    height: 40px;
+    width: 350px;
+    background-color: #eefa46;
+    margin: 10px 0px 0px -175px;
+    position: relative;
+    left: 50%;
+    border: 0;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.pw {
+    margin: 30px 0 0 0;
+    position: relative;
+    font-size: 30px;
+    padding-left: 125px;
+    color: #9d9d9d;
+}
+
+button {
+    height: 50px;
+    width: 350px;
+    background-color: #496bfa;
+    margin: 20px 0px 0px -175px;
+    position: relative;
+    left: 50%;
+    border: 0;
+    border-radius: 8px;
+    font-size: 22px;
+    color: #fff7f4;
+}
+
+button:hover, button:active {
+    background-color: blue;
+}
+
+a.register {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: grey;
+}
+
+a:hover, a:active {
+    color: blue;
+}

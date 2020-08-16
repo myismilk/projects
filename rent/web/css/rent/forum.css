@@ -1,0 +1,319 @@
+#c {
+    position: absolute;
+    z-index: -2;
+}
+
+body {
+    background: #f9f9f9;
+    cursor: url("../cursor.ico"), default;
+    /*overflow-y: hidden;*/
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+input:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 255, 0.77);
+}
+button:focus{
+    outline: none;
+}
+
+.header {
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    height: 60px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 5px solid rgb(49, 48, 48);
+    white-space: nowrap;
+}
+
+.picture {
+    position: relative;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url("token.jpg") no-repeat;
+    background-size: cover;
+}
+
+.header>span,
+.header>a,
+.header>button {
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    padding: 8px;
+    margin: 0 0 0 20px;
+    text-align: center;
+    border-radius: 20px;
+    transform: translateY(-16px);
+}
+.header>button{
+    color:black;
+}
+
+.choose1 {
+    background-color: #0ba6b2;
+    color: #fcff15;
+    font-size: 30px !important;
+}
+
+.forum {
+    background-color: lightblue;
+}
+
+.userName {
+    background: transparent !important;
+    border:none;
+    text-decoration: underline;
+}
+
+.pageUp {
+    background: #e8c775;
+    text-align: center;
+    border:none;
+}
+
+.pageUp:hover,
+.pageUp:active {
+    background-color: rgb(252, 92, 0);
+    color:white;
+}
+
+#form{
+    display: inline-block;
+    margin:0 0 0 20px;
+}
+
+.exit {
+    position: relative;
+    width:56px;
+    height:38px;
+    background: rgba(255, 74, 95, 0.86);
+    text-align: center;
+    font-size: 18px;
+    transform: translateY(-16px);
+}
+
+.exit:hover,
+.exit:active {
+    background-color: rgb(255, 40, 37);
+    color: #fff8af;
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    border-radius: 8px;
+    border: 2px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.body {
+    position: absolute;
+    background: #f9f9f9;
+    width: 68%;
+    left: 16%;
+    height: 90%;
+    margin-top: 75px;
+    overflow-y: scroll;
+    border: 0;
+    border-top: none;
+    border-bottom: none;
+    word-wrap: break-word;
+    line-height: 30px;
+}
+
+.test {
+    position: relative;
+    height: 300px;
+    border: 1px solid #d6d6d6;
+    border-top: none;
+}
+
+.user {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    border: 1px solid #d6d6d6;
+    display: inline;
+    text-align: center;
+}
+
+.picture1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 30px;
+    border: 1px solid #d6d6d6;
+    background: url("token.jpg");
+    background-size: 100% 100%;
+    transform: translateX(-50%);
+}
+
+.user1Name {
+    position: relative;
+    top: 140px;
+    font-size: 18px;
+    color: #ff8426;
+}
+
+.floorTip {
+    position: relative;
+    top: 160px;
+}
+
+.content {
+    position: relative;
+    display: inline-block;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    border: 1px solid #d6d6d6;
+    border-left: 0;
+    border-bottom: 0;
+    text-indent: 2em;
+    overflow-x: auto;
+    font-size: 20px;
+}
+
+ul {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.text {
+    height: 100px;
+}
+
+.response {
+    position: relative;
+    text-align: right;
+    right: 30px;
+    color: #8589ff;
+}
+
+.response:hover, .response:active {
+    color: blue;
+}
+
+.replyUsername {
+    color: #ff2f9b;
+}
+
+.tempTextarea {
+    position: relative;
+    height: 50px;
+    width: 93%;
+    text-indent: 2em;
+    font-size: 18px;
+    margin: 0;
+    border-radius: 15px;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid lightblue;
+}
+
+.replyConfirm {
+    position: relative;
+    left: 75%;
+    height: 35px;
+    border-radius: 10px;
+    border: 0;
+    background: #7490e6;
+    color: white;
+    font-size: 15px;
+}
+
+.replyConfirm:hover, .replyConfirm:active {
+    background: blue;
+}
+
+.cancel {
+    position: relative;
+    left: 79%;
+    height: 35px;
+    border-radius: 10px;
+    border: 0;
+    background: #e6a7a7;
+    color: #fefff6;
+    font-size: 15px;
+}
+
+.cancel:hover, .cancel:active {
+    background: #ff8794;
+}
+
+.comment {
+    position: relative;
+    min-height: 380px;
+    height: auto;
+    border: 1px solid #d6d6d6;
+    padding-top: 10px;
+}
+
+.title {
+    position: relative;
+    font-size: 18px;
+}
+
+.commentContent {
+    position: relative;
+    height: 270px;
+    width: 100%;
+    font-size: 20px;
+    text-indent: 2em;
+    border: 0;
+    background: #fff8cf;
+}
+
+.submitComment {
+    position: relative;
+    width: 70px;
+    height: 45px;
+    left: 50%;
+    background-color: #8db4ff;
+    border-radius: 20px;
+    border: 0;
+    font-size: 22px;
+    margin: 0 0 0 -90px;
+}
+
+.submitComment:hover, .submitComment:active {
+    background: #6972ff;
+    color: white;
+}
+
+.cleanUp {
+    position: relative;
+    width: 70px;
+    height: 45px;
+    left: 50%;
+    margin: 0 0 0 70px;
+    background-color: #8db4ff;
+    border-radius: 20px;
+    border: 0;
+    font-size: 22px;
+}
+
+.cleanUp:hover, .cleanUp:active {
+    background: #ff8c95;
+    color: white;
+}
+
+

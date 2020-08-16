@@ -1,0 +1,402 @@
+body {
+    cursor: url("cursor.ico"), auto;
+    overflow-y: hidden;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 255, 0.77);
+}
+
+button:focus {
+    outline: none;
+    border: 1px solid #f8e923;
+}
+
+.header {
+    position: fixed;
+    width: 50%;
+    height: 100px;
+    left: 25%;
+    top: 2%;
+
+    border-radius: 20px;
+}
+
+.picture {
+    position: absolute;
+    margin: 0;
+    top: 9px;
+    width: 90px;
+    height: 85px;
+    left: 4%;
+    border-radius: 15px;
+    background: url("token.jpg") no-repeat;
+    background-size: contain;
+}
+
+.welcome {
+    width: 420px;
+    height: 70px;
+    color: #f2dd29;
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 3px 3px gray;
+    position: absolute;
+    left: 20%;
+    top: 15px;
+    margin: 0;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.userName {
+    position: absolute;
+    left: 65%;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    width: 180px;
+    height: 60px;
+    margin: 20px;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    border: 0;
+}
+
+.userName:hover, .userName:active {
+    color: #ff663c;
+}
+
+.pageUp {
+    position: absolute;
+    left: 82%;
+    background: #e8c775;
+    height: 46px;
+    width: 90px;
+    padding: 0;
+    line-height: 43px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #607080;
+    margin: 27px;
+}
+
+.pageUp:hover, .pageUp:active {
+    background-color: yellow;
+    color: white;
+}
+
+.exit {
+    position: absolute;
+    left: 89%;
+    background: rgba(255, 103, 71, 0.86);
+    color: white;
+    width: 60px;
+    height: 46px;
+    padding: 0;
+    margin: 27px;
+    text-align: center;
+    font-size: 23px;
+    line-height: 46px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.exit:hover, .exit:active {
+    background-color: rgb(255, 40, 37);
+    color: black;
+}
+
+.backgroundDiv {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    z-index: 1;
+}
+
+.backgroundDiv02 {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    z-index: 1;
+}
+
+.addRoom {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 30%;
+    height: 31%;
+    background: #fffdd9;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ff5c88;
+}
+
+.roomName {
+    margin: 20px;
+    font-size: 18px;
+}
+
+.roomDes {
+    margin: 20px 20px 0 12.5%;
+    font-size: 22px;
+    border-radius: 10px;
+    width: 75%;
+    height: 90px;
+}
+
+.desContent {
+    font-size: 18px;
+    margin-top: -20px;
+}
+
+#enterRoom {
+    position: absolute;
+    top: 30%;
+    left: 37.5%;
+    width: 25%;
+    height: 15%;
+    background: #fffdd9;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 23px;
+    color: #ff5c88;
+    padding-top: 30px;
+}
+
+.createConfirm {
+    border-radius: 10px;
+    width: 55px;
+    height: 35px;
+    border: 0;
+    font-size: 18px;
+    margin-top: 15px;
+    background: lightblue;
+}
+
+.createConfirm:hover, .createConfirm:active {
+    background: #6767ff;
+    color: white;
+}
+
+.enterConfirm {
+    border-radius: 10px;
+    width: 110px;
+    height: 35px;
+    border: 0;
+    font-size: 18px;
+    margin-top: 25px;
+    background: lightblue;
+}
+
+.enterConfirm:hover, .enterConfirm:active {
+    background: #6767ff;
+    color: white;
+}
+
+.cancelEnter {
+    border-radius: 10px;
+    width: 70px;
+    height: 35px;
+    border: 0;
+    font-size: 18px;
+    margin-top: 25px;
+    background: lightblue;
+}
+
+.cancelEnter:hover, .cancelEnter:active {
+    background: #6767ff;
+    color: white;
+}
+
+.body1 {
+    display: block;
+    margin-top: 130px;
+    position: absolute;
+    overflow-y: scroll;
+    width: 100%;
+    height: 88%;
+}
+
+.a:hover, .a:active {
+    background-color: #FF6F3C;
+}
+
+.roomTitle {
+    margin: 0;
+    height: 50px;
+    color: rgba(255, 25, 26, 0.51);
+    font-size: 25px;
+}
+
+.roomAuthor {
+    padding-top: 20px;
+    margin: 0;
+    font-size: 22px;
+}
+
+.desContent {
+    width: 80%;
+    height: 90px;
+    border-radius: 10px;
+}
+
+.desContent:focus {
+    outline: none;
+    border: 1px solid #b7e5ff;
+}
+
+.enterRoom {
+    margin-top: 40px;
+    height: 50px;
+    width: 130px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    background: #fffb9f;
+    font-family: 幼圆;
+    font-weight: bold;
+}
+
+.enterRoom:hover, .enterRoom:active {
+    background: #7387e6;
+    color: white;
+}
+
+.deleteRoom {
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    background: #ff8787;
+    font-family: 幼圆;
+    font-weight: bold;
+}
+
+.deleteRoom:hover, .deleteRoom:active {
+    background: #e6544f;
+    color: white;
+}
+
+.createRoom {
+    position: relative;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 0;
+    width: 70%;
+    height: 50px;
+    top: 40%;
+    left: 15%;
+    line-height: 50px;
+    background: #f6ff57;
+    font-family: 幼圆;
+    font-weight: bold;
+}
+
+.createRoom:hover, .createRoom:active {
+    background: #6175ff;
+    color: white;
+}
+
+/*background*/
+.wrap {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    /*animation: move 20s linear infinite alternate;*/
+}
+
+.ball {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: rgba(154, 203, 250, 0.5);
+    box-shadow: 0 0 2px rgb(151, 150, 150);
+    animation: bubble 2s infinite linear;
+}
+
+.ball:before {
+    content: "";
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background: radial-gradient(circle at top, rgba(255, 255, 255), rgba(0, 0, 0, 0) 60%);
+    transform: rotate(-30deg);
+    z-index: 2;
+}
+
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 90vw;
+    }
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scaleY(0.95) scaleX(1.05);
+    }
+
+    48% {
+        transform: scaleY(1.08) scaleX(0.92);
+    }
+
+    68% {
+        transform: scaleY(0.98) scaleX(1.02);
+    }
+
+    80% {
+        transform: scaleY(1.02) scaleX(0.98);
+    }
+
+    97%,
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

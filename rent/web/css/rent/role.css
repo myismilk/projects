@@ -1,0 +1,253 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: radial-gradient(rgba(99, 99, 99, 0.993), rgb(17, 17, 17) 90%);
+    cursor: url("../cursor.ico"), auto;
+}
+
+button:focus {
+    outline: none;
+    border: 1px solid;
+}
+
+.welcomeTitle {
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    margin: 130px 0 0 -200px;
+    width: 400px;
+    height: 80px;
+    text-align: center;
+    color: rgba(255, 239, 146, 0.8);
+    font-size: 35px;
+    font-family: 幼圆;
+    font-weight: bold;
+}
+
+#rEnter01{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color:lightgoldenrodyellow;
+    font-size: 40px;
+    animation: float 3s linear infinite alternate;
+}
+
+@keyframes float{
+    from{
+        transform: translate(-345px, -290px);
+    }
+    to{
+        transform: translate(-345px, -270px);
+    }
+}
+
+#role1 {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    animation: rotate 16s linear infinite;
+}
+
+#center01 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(red, lightyellow 70%);
+    box-shadow: 0 0 50px white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-292.5px, -50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#role1:hover {
+    animation: none;
+    transform: translate(-125%, -50%) rotateY(60deg);
+}
+
+#role1:hover .choose1 {
+    position: relative;
+    top: 50%;
+    margin: -40px 0 0 0;
+    font-size: 50px;
+    text-align: center;
+    font-family: "幼圆";
+    color: #f5d000;
+    transform: rotateY(-60deg);
+}
+
+.choose1 {
+    font-size: 0;
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid rgb(46, 178, 240);
+    box-sizing: border-box;
+}
+
+.circle:before {
+    content: '';
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    border-top: 6px solid rgb(247, 94, 6);
+    animation: innerRotate 3s linear infinite;
+}
+
+@keyframes innerRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.c1 {
+    transform: rotateX(120deg);
+}
+
+.c2 {
+    transform: rotateX(240deg);
+}
+
+@keyframes rotate {
+    from {
+        transform: translate(-125%, -50%) rotateY(60deg) rotateX(0deg);
+    }
+
+    to {
+        transform: translate(-125%, -50%) rotateY(60deg) rotateX(360deg);
+    }
+}
+
+#lEnter02{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color:lightgoldenrodyellow;
+    font-size: 40px;
+    animation: lFloat 3s linear infinite alternate;
+}
+
+@keyframes lFloat{
+    from{
+        transform: translate(180px, -290px);
+    }
+    to{
+        transform: translate(180px, -270px);
+    }
+}
+
+#role2 {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    animation: rotate2 16s linear infinite;
+}
+
+#center02 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(red, lightyellow 70%);
+    box-shadow: 0 0 50px white;
+    left: 50%;
+    top: 50%;
+    transform: translate(232.5px, -50%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#role2:hover #center02 {
+    display: none;
+}
+
+#role2:hover {
+    animation: none;
+    transform: translate(25%, -50%) rotateY(60deg);
+}
+
+.c5 {
+    transform: rotateX(120deg);
+}
+
+.c4 {
+    transform: rotateX(240deg);
+}
+
+#role2:hover .choose2 {
+    position: relative;
+    top: 50%;
+    margin: -40px 0 0 0;
+    font-size: 50px;
+    color: #f5d000;
+    transform: rotateY(-60deg);
+    text-align: center;
+    font-family: "幼圆";
+}
+
+.choose2 {
+    font-size: 0;
+}
+
+@keyframes rotate2 {
+    from {
+        transform: translate(25%, -50%) rotateY(60deg) rotateX(0deg);
+    }
+
+    to {
+        transform: translate(25%, -50%) rotateY(60deg) rotateX(360deg);
+    }
+}
+
+.exit {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin: 0 0 0 500px;
+    width: 90px;
+    height: 50px;
+    border: solid;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: 幼圆;
+    font-weight: bold;
+    padding: 0 0 2px;
+    background-color: #ffc019;
+    color: white;
+}
+
+.exit:hover,
+.exit:active {
+    background-color: rgba(255, 0, 0, 0.73);
+}
+
+p {
+    white-space: nowrap;
+}
