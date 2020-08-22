@@ -1,0 +1,42 @@
+.health-detail-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    .header{
+        .to-login{
+            font-size: 18px;
+            margin-left: 450px;
+        }
+    }
+
+    .body{
+        position: relative;
+        width: 1000px;
+        height: calc(100% - 80px);
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: content-box;
+
+        .card{
+            height: 100%;
+            width: 1000px;
+
+            background: rgba(252, 252, 252, 0.9);
+
+            .card-header{
+                font-size: 22px;
+                font-weight: bold;
+                color: rgb(21, 88, 97);
+            }
+
+            .card-body{
+                overflow-y: auto;
+            }
+
+            .card-text{
+                text-indent: 2em;
+            }
+        }
+    }
+}

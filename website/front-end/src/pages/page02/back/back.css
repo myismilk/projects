@@ -1,0 +1,26 @@
+.page02-header{
+    position: relative;
+    height: 40px;
+    width: calc(100% - 100px);
+}
+
+.page02-header>button{
+    position: absolute;
+    height: 25px;
+    width: 45px;
+    background: rgba(247, 87, 113, 0.9);
+    border-radius: 5px;
+    border:2px solid yellow;
+    font-size: 18px;
+    line-height: 25px;
+    right: 0;
+    color: white;
+}
+
+.page02-header>button:hover{
+    box-shadow: 0 0 5px yellow;
+    background: rgb(119, 209, 240);
+}
+.page02-header>button:focus{
+    outline: none;
+}

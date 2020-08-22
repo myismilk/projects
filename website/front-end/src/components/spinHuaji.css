@@ -1,0 +1,77 @@
+.spin-huaji-wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+.spin-huaji-wrapper>.wrapper {
+    position: absolute;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    animation: rotate 16s linear infinite;
+    z-index: 2;
+}
+
+
+.spin-huaji-wrapper>.wrapper>.inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid rgb(11, 160, 230);
+}
+
+.spin-huaji-wrapper>.wrapper>.inner:after {
+    content: '';
+    position: absolute;
+    height: 98%;
+    width: 98%;
+    border-radius: 50%;
+    border-left: 6px solid rgb(245, 110, 0);
+    animation: innerRotate 3s linear infinite;
+}
+
+.ring01 {
+    transform: rotateX(120deg);
+}
+
+.ring02 {
+    transform: rotateX(240deg);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(60deg) rotateX(0);
+    }
+
+    to {
+        transform: rotateY(60deg) rotateX(360deg);
+    }
+}
+
+@keyframes innerRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-center {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: radial-gradient(red, lightyellow 70%);
+    box-shadow: 0 0 20px white;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}

@@ -1,0 +1,130 @@
+.page05-mb{
+    position: absolute;
+    top: 20px;
+    width: 75vw;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    height: auto;
+    background: rgba(238, 226, 226, 0.1);
+}
+
+.page05-mb button:focus {
+    outline: none;
+}
+
+.page05-mb-l{
+    display: inline-block;
+    position: absolute;
+    left:0;
+    height: 100%;
+    right: 75px;
+    width: auto;
+    background: transparent;
+}
+
+.page05-leaveM{
+    position: relative;
+    width: 100%;
+    height: 85px;
+    background: transparent;
+}
+
+.page05-leaveM-content{
+    display: inline-block;
+    left:0;
+    height: 100%;
+    width:calc(100% - 75px);
+    font-size: 16px;
+    text-indent: 2em;
+    border-radius: 10px;
+    background: rgba(253, 253, 253, 0.7);
+}
+
+.page05-leaveM-content:focus{
+    outline: none;
+}
+
+.page05-leaveM-btns{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 50px;
+}
+
+.page05-leaveM-btns> button{
+    width: 50px;
+    background: rgb(243, 236, 231);
+    border:1px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    margin:10px 0 5px -15px;
+}
+
+.page05-leaveM-reset{
+    color: rgb(231, 110, 28);
+}
+
+.page05-leaveM-btns> button:hover{
+    border: 1px solid yellow;
+    color: white;
+    background-color: rgb(241, 103, 48);
+}
+
+.page05-leaveM-btns> .page05-leaveM-leave:hover{
+    background: rgb(20, 211, 245);
+}
+
+.page05-mb-r{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.page05-buttonWrapper{
+    position: relative;
+    top:30vh;
+    text-align: center;
+}
+
+.page05-buttonWrapper>button:hover{
+    background: rgb(13, 186, 243);
+    color:white;
+    border: 1px solid yellow;
+}
+
+.page05-buttonWrapper>.page05-choosePage:hover{
+    background:rgb(245, 32, 17);
+    border: 1px solid yellow;
+}
+
+.page05-pageButton{
+    width: 25px;
+    height: 80px;
+    border:1px solid lightyellow;
+    border-radius: 8px;
+    background: rgba(228, 239, 243, 0.5);
+    font-size: 18px;
+}
+
+.page05-choosePage{
+    width: 20px;
+    height: 22px;
+    border:1px solid lightyellow;
+    border-radius: 3px;
+    background: rgba(245, 32, 17, 0.6);
+    font-size: 18px;
+    margin: 15px 3px 15px 0;
+}
+
+.page05-pageInput{
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border:1px solid rgb(167, 149, 149);
+    font-size: 16px;
+    border-radius: 5px;
+}

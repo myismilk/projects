@@ -1,0 +1,12 @@
+.myCanvas{
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+}
+#canvasUp{
+    top:100%;
+    transform: translate(-50%,-105%);
+}
+#canvasDown{
+    transform: translate(-50%,5%);
+}

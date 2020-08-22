@@ -1,0 +1,27 @@
+.page01{
+    background: radial-gradient(circle farthest-side at 35% 60%, rgba(17, 16, 16, 0.63), rgb(10, 15, 58));
+    opacity: 1;
+    z-index: 1;
+}
+
+.page01-rightSide{
+    position: absolute;
+    left:40vw;
+    top:52vh;
+    margin-top: -350px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(230, 195, 195);
+}
+
+.page01-rightSide > p >span {
+    color: rgba(255, 94, 0, 0.856);
+}
+
+.page01-toV1 {
+    color: rgba(255, 94, 0, 0.856);
+    text-decoration: none;
+}
+.page01-toV1:hover{
+    color: rgb(0, 153, 255);
+}

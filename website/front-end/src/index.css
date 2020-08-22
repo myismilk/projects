@@ -1,0 +1,19 @@
+*{
+    box-sizing: content-box;
+    cursor:url("./img/cursor.ico"),auto;
+}
+body,html{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+.mainPage{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding:0;
+    transition: 1.5s;
+    will-change: opacity;
+}

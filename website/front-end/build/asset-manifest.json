@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "./static/css/main.14e7d66f.chunk.css",
+    "main.js": "./static/js/main.bfcebb94.chunk.js",
+    "main.js.map": "./static/js/main.bfcebb94.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.dd50bfa6.js",
+    "runtime-main.js.map": "./static/js/runtime-main.dd50bfa6.js.map",
+    "static/js/2.010047f8.chunk.js": "./static/js/2.010047f8.chunk.js",
+    "static/js/2.010047f8.chunk.js.map": "./static/js/2.010047f8.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.f9331d9ce4b794752873bc279a68a50f.js": "./precache-manifest.f9331d9ce4b794752873bc279a68a50f.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.14e7d66f.chunk.css.map": "./static/css/main.14e7d66f.chunk.css.map",
+    "static/js/2.010047f8.chunk.js.LICENSE": "./static/js/2.010047f8.chunk.js.LICENSE",
+    "static/media/Library.jpg": "./static/media/Library.555b2bb1.jpg",
+    "static/media/bank.jpg": "./static/media/bank.9bcb8185.jpg",
+    "static/media/chatRoom.jpg": "./static/media/chatRoom.78009232.jpg",
+    "static/media/chatRoomWithWebSocket.png": "./static/media/chatRoomWithWebSocket.7f4dd6c7.png",
+    "static/media/chenhui.jpg": "./static/media/chenhui.b20e47f9.jpg",
+    "static/media/index.css": "./static/media/cursor.ad46d05a.ico",
+    "static/media/magicCube.css": "./static/media/huaji.424b911b.jpg",
+    "static/media/onlineStore.png": "./static/media/onlineStore.baf91eb4.png",
+    "static/media/rent.jpg": "./static/media/rent.f163bb79.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd50bfa6.js",
+    "static/js/2.010047f8.chunk.js",
+    "static/css/main.14e7d66f.chunk.css",
+    "static/js/main.bfcebb94.chunk.js"
+  ]
+}

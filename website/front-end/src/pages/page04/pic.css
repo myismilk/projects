@@ -1,0 +1,28 @@
+.page04-picContainer{
+    position: relative;
+    top:150px;
+    margin-left:260px;
+    height: 528px;  /*origin:440px*/
+    width: 360px;    /*origin:300px*/
+    border-radius: 5%;
+    box-shadow: 0 0 5px gray;
+    overflow: hidden;
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.page04-pic{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes picFloat{
+    from{
+        margin-top: 0px;
+    }
+
+    to{
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,75 @@
+.page04-blackBoard{
+    position: relative;
+    height: 90%;
+    width: 76%;
+    left:12%;
+    top: 5%;
+    background-color: rgba(192, 233, 247, 0.2);
+    border-radius: 10px;
+}
+
+.page04-blackBoard > *{
+    display: inline-block;
+    position: absolute;
+    height:100%;
+    text-align: center;
+    border-radius: 10px;
+}
+.page04-title{
+    width: 60px;
+    background-color: rgba(144, 218, 247, 0.2);
+    writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    font-size: 45px;
+    color: aliceblue;
+}
+.page04-list{
+    left: 65px;
+    width:150px;
+    background: rgba(173, 230, 216, 0.2);
+}
+
+.page04-list > h3 {
+    font-size: 25px;
+    color: blanchedalmond;
+}
+
+.page04-list > p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-150%);
+    writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(236, 147, 30);
+}
+
+.page04-content{
+    left: 225px;
+    padding: 20px;
+    font-size: 23px;
+    text-align: left;
+}
+
+.page04-content > p{
+    background: rgba(191, 220, 230, 0.2);
+    border-radius: 10px;
+}
+
+.page04-content > p > span{
+    color: rgb(238, 47, 13);
+}
+
+.page04-content > p > a{
+    color: rgb(11, 198, 245);
+    text-decoration: none;
+}
+
+
+
+.page04-content > p > a:hover{
+    color: rgb(241, 124, 13);
+    background: lightgoldenrodyellow;
+    border-radius: 5px;
+}
